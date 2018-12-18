@@ -16,27 +16,32 @@ case sign
   when "*"
     puts "#{num3=num1*num2}"
   when "/"
-   puts "#{num3=num1/num2}"
+    puts "#{num3=num1/num2}"
   else
-   puts "You gave me #{sign} -- I have no idea what to do with that."
+   printf "You gave me #{sign} -- I have no idea what to do with that."
   end
 end
 
 def advanced_calc
+  puts "sqrt: Square Root, pwr: Power"
+  adv_sign = gets.chomp
+
   case adv_sign
   when "sqrt"
     print "Enter your number: "
     num1 = gets.chomp.to_f
-    "#{num2 = Math.sqrt(num1)}"
-  when "power"
+    putc "#{num2 = Math.sqrt(num1)}"
+  when "pwr"
     print "Enter your number"
     num1 = gets.chomp.to_f
     print "To the power of "
-    num2 = gets.chomp.f
-    puts "#{num3 = num1 ** num2}"
+    num2 = gets.chomp.to_f
+    p "#{num3 = num1 ** num2}"
+  else    puts "You gave me #{adv_sign} -- I have no idea what to do with that."
+  end
 end
 
-puts "Please enter B for basic calculator or A for Advanced Caclulator"
+puts "Please enter A for Advanced Caclulator or B for basic calculator"
 calc_option = gets.chomp.downcase
 if (calc_option === "b")
   basic_calc
