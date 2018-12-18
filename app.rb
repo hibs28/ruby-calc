@@ -23,7 +23,17 @@ case sign
 end
 
 def advanced_calc
-  cas
+  case adv_sign
+  when "sqrt"
+    print "Enter your number: "
+    num1 = gets.chomp.to_f
+    "#{num2 = Math.sqrt(num1)}"
+  when "power"
+    print "Enter your number"
+    num1 = gets.chomp.to_f
+    print "To the power of "
+    num2 = gets.chomp.f
+    puts "#{num3 = num1 ** num2}"
 end
 
 puts "Please enter B for basic calculator or A for Advanced Caclulator"
