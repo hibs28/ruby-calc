@@ -23,15 +23,15 @@ case sign
 end
 
 def advanced_calc
-  puts "sqrt: Square Root, pwr: Power"
+  puts "s: Square Root, p: Power"
   adv_sign = gets.chomp
 
   case adv_sign
-  when "sqrt"
+  when "s"
     print "Enter your number: "
     num1 = gets.chomp.to_f
     putc "#{num2 = Math.sqrt(num1)}"
-  when "pwr"
+  when "p"
     print "Enter your number"
     num1 = gets.chomp.to_f
     print "To the power of "
